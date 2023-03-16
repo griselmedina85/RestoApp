@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestoApp", "RestoApp\RestoApp.csproj", "{8694E79E-0786-472A-8034-0F630F7435E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestoApp", "RestoApp\RestoApp.csproj", "{8694E79E-0786-472A-8034-0F630F7435E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{08292609-2887-45F8-AD33-FD4526D5C808}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{08292609-2887-45F8-AD33-FD4526D5C808}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{89E51FAF-C1E4-423E-90A6-BDC69C5D20E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{89E51FAF-C1E4-423E-90A6-BDC69C5D20E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{B73E9496-C23A-4F6B-A1D7-71CD2ACBB761}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{B73E9496-C23A-4F6B-A1D7-71CD2ACBB761}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,51 @@
+﻿@using Entities
+@using Business
+
+@page "/Persons"
+
+
+<div>
+    <EditForm Model="oPerson">
+        
+            <div class="form-group">
+                <label>Nombre: </label>
+                <InputText @bind-Value="oPerson.PersonName" class="form-control"></InputText>
+            </div>
+            <div class="form-group">
+                <label>Apellido: </label>
+                <InputText @bind-Value="oPerson.PersonLastName" class="form-control"></InputText>
+            </div>
+            <div class="form-group">
+                <label>DNI: </label>
+                <InputNumber @bind-Value="oPerson.IdentityNumber" class="form-control"></InputNumber>
+            </div>
+            <div class="form-group">
+                <label>Fecha de Nacimiento: </label>
+                <InputDate @bind-Value="oPerson.Birthday" class="form-control"></InputDate>
+            </div>
+            <div class="form-group">
+                <label>Email: </label>
+                <InputText @bind-Value="oPerson.Email" class="form-control"></InputText>
+            </div>
+            <div class="form-group">
+                <label>Teléfono: </label>
+                <InputText @bind-Value="oPerson.Phone" class="form-control"></InputText>
+            </div>
+            <div class="form-group">
+                <label>Género: </label>
+                <InputText @bind-Value="oPerson.Gender" class="form-control"></InputText>
+            </div>
+
+            <input type="button" class="btn btn-primary" value="Guardar" @onclick="savePerson"/>
+
+        
+    </EditForm>
+</div>
+
+@code {
+    PersonEntity oPerson = new PersonEntity();
+    private void savePerson()
+    {
+        BPerson.CreatePerson(oPerson);
+    }
+}

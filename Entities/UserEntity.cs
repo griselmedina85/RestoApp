@@ -13,6 +13,7 @@ id_person	int	Unchecked
 */
 
         [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
         [Required]
         [StringLength(50)]

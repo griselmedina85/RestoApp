@@ -39,13 +39,13 @@ namespace DataAccess
                 new LocationEntity { LocationId = 2, LocationDescription = "Patio" },
                 new LocationEntity { LocationId = 3, LocationDescription = "Terraza" }
                 );
-            //modelBuilder.Entity<PersonEntity>().HasIndex(b => b.PersonId).IsUnique();
+            modelBuilder.Entity<PersonEntity>().HasIndex(b => b.PersonId).IsUnique();
             //modelBuilder.Entity<ProfileEntity>().HasIndex(b => b.ProfileId).IsUnique();
             //modelBuilder.Entity<ReservationEntity>().HasIndex(b => b.ReservationId).IsUnique();
             //modelBuilder.Entity<ReservationLogEntity>().HasIndex(b => b.ReservationLogId).IsUnique();
             //modelBuilder.Entity<RestaurantEntity>().HasIndex(b => b.RestaurantId).IsUnique();
             //modelBuilder.Entity<TableEntity>().HasIndex(b => b.TableId).IsUnique();
-            //modelBuilder.Entity<UserEntity>().HasIndex(b => b.UserId).IsUnique();
+            modelBuilder.Entity<UserEntity>().HasIndex(b => b.UserId).IsUnique();
             modelBuilder.Entity("Entities.ReservationEntity", b =>
             {
                 b.HasOne("Entities.ClientEntity", "Cliente")

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data;
 using System.Text;
 
 namespace Entities
@@ -9,6 +10,7 @@ namespace Entities
     public class PersonEntity
     {
         [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int PersonId { get; set; }
         [Required]
         [StringLength(50)]

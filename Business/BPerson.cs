@@ -9,14 +9,14 @@ namespace Business
 {
     public class BPerson
     {
-        public List<PersonEntity> PersonList()
+        public static List<PersonEntity> PersonList()
         {
             using (var db = new RestoAppContext())
             {
                 return db.Persons.ToList();
             }
         }
-        public void CreatePerson(PersonEntity oPerson)
+        public static void CreatePerson(PersonEntity oPerson)
         {
             using (var db = new RestoAppContext())
             {
@@ -24,7 +24,7 @@ namespace Business
                 db.SaveChanges();
             }
         }
-        public void UpdatePerson(PersonEntity oPerson)
+        public static void UpdatePerson(PersonEntity oPerson)
         {
             using (var db = new RestoAppContext())
             {
